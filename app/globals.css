@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+:root {
+  /* Color tokens — warm pink/cream palette per design reference:
+     section bg #EFE8E6, cards #FFFFFF (bg-white), pink accent #E83E82,
+     dark text #2F211B, secondary text ~#81746D (approximated via
+     text-ink/60 composited over cream/white — see --taupe below for the
+     exact hex when a flat, non-opacity value is needed). */
+  --cream: #efe8e6;
+  --cream-dark: #e3dcda;
+  --ink: #2f211b;
+  --brown: #6b4a2f;
+  --taupe: #81746d;
+  --navy: #33436b;
+  --terracotta: #b85c3e;
+
+  /* Brand palette — drawn from the BellaFert / FertiMen bottle labels. Pink
+     is the primary accent (headings, icons, cards, CTAs, ratings); blue is
+     a deliberately minor secondary accent reserved specifically for
+     promotional/active UI states (the header promo badge, the hero's
+     secondary CTA, an active filter tab) — never used for section
+     backgrounds or content accents, so its rare appearances read as
+     "special", not random. --lime(-dark) and --pale-yellow are aliased to
+     this palette so every existing usage site-wide (buttons, checkmarks,
+     section backgrounds, cart, newsletter) follows suit — no yellow
+     remains anywhere on the site. */
+  --blue: #4c6fe0;
+  --blue-dark: #3a56c2;
+  --blue-light: #e0f2fe;
+  --pink: #e83e82;
+  --pink-dark: #c5356f;
+  --pink-light: #ffe0f1;
+
+  --lime: var(--pink-light);
+  --lime-dark: var(--pink-dark);
+  --pale-yellow: var(--blue-light);
+
+  /* Section-rhythm + decorative-icon tokens, consolidated from several
+     one-off hexes that had accumulated across sections (#fdf5f3, #fbf9f9,
+     #ffffff and #f7f3f2 as ad-hoc section/card tints; #cb8487 and #ca9fa4
+     as two near-identical "rose" icon accents). Sections alternate
+     bg-white / --pink-pale for a deliberate rhythm; --rose is the single
+     accent used for passive decorative icons (stars, trust/value icons) —
+     a genuine desaturated TINT of --pink's own hue (not an unrelated
+     muted-red, which #cb8487 originally was), so it reads as "soft pink"
+     rather than a second, competing accent color. Kept distinct from the
+     stronger --pink/--pink-dark, which are reserved for interactive
+     elements (buttons, links, active states). --blue-light
+     remains a deliberately sparing accent, used only for promotional/active
+     UI states (promo badge, secondary hero CTA, active filter tab). */
+  --pink-pale: #fdf5f3;
+  --rose: #c98a9f;
+
+  /* Radii */
+  --radius-pill: 999px;
+  --radius-card: 1rem;
+
+  /* Shadows */
+  --shadow-card: 0 12px 24px -12px rgba(47, 33, 27, 0.18);
+  --shadow-soft: 0 4px 14px -4px rgba(47, 33, 27, 0.12);
+
+  /* Container */
+  --container-max: 1600px;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-ink: var(--ink);
+  --color-brown: var(--brown);
+  --color-taupe: var(--taupe);
+  --color-lime: var(--lime);
+  --color-lime-dark: var(--lime-dark);
+  --color-navy: var(--navy);
+  --color-terracotta: var(--terracotta);
+  --color-pale-yellow: var(--pale-yellow);
+  --color-blue: var(--blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-light: var(--blue-light);
+  --color-pink: var(--pink);
+  --color-pink-dark: var(--pink-dark);
+  --color-pink-light: var(--pink-light);
+  --color-pink-pale: var(--pink-pale);
+  --color-rose: var(--rose);
+
+  --font-display: var(--font-montserrat);
+  --font-sans: var(--font-montserrat);
+
+  --radius-pill: var(--radius-pill);
+  --radius-card: var(--radius-card);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-soft: var(--shadow-soft);
+
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-marquee-slow: marquee 48s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+* {
+  border-color: rgba(47, 33, 27, 0.12);
+}
+
+:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Small text (captions, meta info, secondary copy) defaults to Montserrat's
+   regular weight, which reads as faint at 12–14px. Bump it to medium so it
+   stays legible — :where() keeps this at zero specificity so any element
+   that already sets an explicit font-weight utility (font-semibold, etc.)
+   still wins over this default. */
+@layer utilities {
+  :where(.text-xs, .text-sm) {
+    font-weight: 500;
+  }
+}
+
+/* Hide scrollbar for horizontally-scrollable carousels while keeping scroll behavior */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,59 @@
+{
+  "sections": [
+    {
+      "key": "products",
+      "items": [
+        {
+          "question": "How long before I see results?",
+          "answer": "Our formulas are designed for a 3-month protocol: a full maturation cycle for eggs or sperm takes about 90 days. It's rare to see results before the end of the first 3-month cycle — consistency matters more than speed."
+        },
+        {
+          "question": "Are your products safe and certified?",
+          "answer": "Yes. All our supplements are 100% natural, manufactured in GMP-certified facilities, with no artificial additives."
+        },
+        {
+          "question": "Can my partner and I take BellaFert and FertiMen together?",
+          "answer": "Absolutely — that's exactly the point of the Couple Pack, which combines BellaFert and FertiMen to support both partners at the same time."
+        },
+        {
+          "question": "Should I see a doctor before starting?",
+          "answer": "We recommend asking your doctor for advice if you are pregnant, breastfeeding, or undergoing treatment. Each product page details the specific precautions."
+        }
+      ]
+    },
+    {
+      "key": "shipping",
+      "items": [
+        {
+          "question": "What are the delivery times?",
+          "answer": "We deliver anywhere in Morocco within 24 to 48 business hours."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "You can pay cash on delivery or by card, whichever you prefer."
+        },
+        {
+          "question": "Do you ship outside Morocco?",
+          "answer": "For now, our deliveries are limited to Moroccan territory. Contact us if you have a specific request."
+        }
+      ]
+    },
+    {
+      "key": "orders",
+      "items": [
+        {
+          "question": "What if I'm not satisfied?",
+          "answer": "All our products are covered by our money-back guarantee. Contact us and we'll find a solution quickly."
+        },
+        {
+          "question": "How can I track my order?",
+          "answer": "A tracking link is sent to you as soon as your order ships. For any question, our team is reachable at hello@biofertmaroc.com."
+        },
+        {
+          "question": "Can I change or cancel my order?",
+          "answer": "Contact us as soon as possible after your purchase — as long as the order hasn't shipped, we can usually change or cancel it."
+        }
+      ]
+    }
+  ]
+}

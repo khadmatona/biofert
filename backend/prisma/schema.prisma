@@ -1,0 +1,74 @@
+// Local order records for the custom Cash-on-Delivery checkout. Shopify
+// remains the source of truth for fulfillment/inventory; this database only
+// tracks the phone-confirmation workflow (pending_confirmation -> confirmed
+// / rejected) and the idempotency key that prevents duplicate Shopify orders
+// from double-submits.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum OrderStatus {
+  pending_confirmation
+  confirmed
+  rejected
+  cancelled
+  processing
+  fulfilled
+}
+
+model Order {
+  id                String      @id @default(uuid())
+  // Frontend-generated key (crypto.randomUUID()); a resubmission with the
+  // same key returns the existing order instead of creating a new one.
+  idempotencyKey    String      @unique
+  shopifyOrderId    String?     @unique
+  shopifyOrderName  String?
+  status            OrderStatus @default(pending_confirmation)
+
+  customerFirstName String
+  customerLastName  String
+  customerEmail     String?
+  customerPhone     String
+
+  // { address1, city, province, country, zip }
+  shippingAddress   Json
+
+  subtotal          Decimal     @db.Decimal(10, 2)
+  shippingAmount    Decimal     @default(0) @db.Decimal(10, 2)
+  total             Decimal     @db.Decimal(10, 2)
+  currency          String
+
+  notes             String?
+
+  items             OrderItem[]
+
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model OrderItem {
+  id               String  @id @default(uuid())
+  orderId          String
+  order            Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  shopifyProductId String
+  shopifyVariantId String
+  productTitle     String
+  variantTitle     String
+  sku              String?
+
+  quantity         Int
+  unitPrice        Decimal @db.Decimal(10, 2)
+  totalPrice       Decimal @db.Decimal(10, 2)
+
+  @@index([orderId])
+}

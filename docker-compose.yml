@@ -1,0 +1,25 @@
+services:
+  biofertmaroc:
+    build: .
+    container_name: biofertmaroc
+    restart: unless-stopped
+    networks:
+      - coolify
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=coolify"
+      - "traefik.http.middlewares.biofertmaroc-gzip.compress=true"
+      - "traefik.http.middlewares.biofertmaroc-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.biofertmaroc-http.rule=Host(`biofertmaroc.79.137.78.143.sslip.io`)"
+      - "traefik.http.routers.biofertmaroc-http.entrypoints=http"
+      - "traefik.http.routers.biofertmaroc-http.middlewares=biofertmaroc-redirect"
+      - "traefik.http.routers.biofertmaroc-https.rule=Host(`biofertmaroc.79.137.78.143.sslip.io`)"
+      - "traefik.http.routers.biofertmaroc-https.entrypoints=https"
+      - "traefik.http.routers.biofertmaroc-https.tls=true"
+      - "traefik.http.routers.biofertmaroc-https.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.biofertmaroc-https.middlewares=biofertmaroc-gzip"
+      - "traefik.http.services.biofertmaroc.loadbalancer.server.port=3000"
+
+networks:
+  coolify:
+    external: true

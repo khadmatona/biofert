@@ -1,0 +1,103 @@
+{
+  "questions": {
+    "age": {
+      "question": "What is your age?",
+      "options": {
+        "under25": "Under 25",
+        "25to29": "25–29",
+        "30to34": "30–34",
+        "35to39": "35–39",
+        "40plus": "40 or over"
+      }
+    },
+    "who": {
+      "question": "Who has the fertility issue been identified or suspected in?",
+      "options": {
+        "woman": "The woman",
+        "man": "The man",
+        "both": "Both",
+        "unsure": "We don't know yet"
+      }
+    },
+    "duration": {
+      "question": "How long have you been trying to have a child?",
+      "options": {
+        "lessThan1y": "Less than a year",
+        "1to2y": "1–2 years",
+        "2to4y": "2–4 years",
+        "moreThan4y": "More than 4 years"
+      }
+    },
+    "pregnancy": {
+      "question": "Has there been a pregnancy before?",
+      "options": {
+        "fullTerm": "Yes, a full-term pregnancy",
+        "oneMiscarriage": "Yes, with a miscarriage",
+        "multipleMiscarriages": "Yes, with several miscarriages",
+        "none": "No pregnancy so far"
+      }
+    },
+    "womanCause": {
+      "question": "If the issue concerns the woman, which situation best matches your case?",
+      "options": {
+        "pcos": "Polycystic ovary syndrome (PCOS)",
+        "ovulationIssues": "Ovulation disorders or weak ovulation",
+        "lowOvarianReserve": "Low ovarian reserve",
+        "blockedTubes": "Blocked fallopian tubes",
+        "endometriosis": "Endometriosis",
+        "hormonalIssues": "Hormonal disorders",
+        "irregularCycles": "Irregular or absent cycles",
+        "noDiagnosis": "No diagnosis / tests not done",
+        "other": "Other"
+      }
+    },
+    "manCause": {
+      "question": "If the issue concerns the man, which situation best matches your case?",
+      "options": {
+        "lowSpermCount": "Low sperm count",
+        "lowMotility": "Low sperm motility",
+        "morphologyIssues": "Sperm morphology abnormalities",
+        "azoospermia": "Absence of sperm (azoospermia)",
+        "varicocele": "Varicocele",
+        "hormonalIssues": "Hormonal disorders",
+        "erectionEjaculationIssues": "Erection or ejaculation issues",
+        "noDiagnosis": "No diagnosis / tests not done",
+        "other": "Other"
+      }
+    },
+    "exams": {
+      "question": "Have you already had tests done or seen a doctor about this delay in pregnancy?",
+      "options": {
+        "fullDiagnosis": "Yes, we have test results and a diagnosis",
+        "someExams": "We've only had some tests done",
+        "priorTreatment": "We've already had treatment",
+        "notYet": "No, not yet"
+      }
+    },
+    "goal": {
+      "question": "What is your main goal today?",
+      "options": {
+        "naturalPregnancy": "Support the chances of natural pregnancy",
+        "improveOvulation": "Improve ovulation and cycle regularity",
+        "ovarianHealth": "Support ovarian health and reserve",
+        "spermCountMotility": "Improve sperm count and motility",
+        "coupleFertility": "Support the couple's fertility",
+        "identifyBestSupport": "Identify the best support for our situation"
+      }
+    }
+  },
+  "recommendations": {
+    "bellafert": {
+      "title": "BellaFert",
+      "description": "Our formula designed to support ovulation and female hormonal balance."
+    },
+    "fertimen": {
+      "title": "FertiMen",
+      "description": "Our formula designed to support testosterone, energy and male fertility."
+    },
+    "packCouple": {
+      "title": "Couple Pack",
+      "description": "BellaFert + FertiMen: the complete duo to support your fertility as a couple."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "title": "1. Data collected",
+      "body": "When you place an order or sign up for our newsletter, {siteName} collects information such as your name, email address, delivery address and phone number."
+    },
+    {
+      "title": "2. Use of data",
+      "body": "Your data is used to process your orders, contact you about your delivery, and, if you've consented, send you our newsletter. We never sell your data to third parties."
+    },
+    {
+      "title": "3. Data retention",
+      "body": "Your data is kept for as long as necessary to manage the business relationship, then archived in accordance with applicable legal obligations."
+    },
+    {
+      "title": "4. Your rights",
+      "body": "You have the right to access, correct and delete your personal data. To exercise these rights, contact us at hello@biofertmaroc.com."
+    },
+    {
+      "title": "5. Cookies",
+      "body": "This site uses cookies necessary for it to function properly (cart, preferences) as well as audience-measurement cookies."
+    },
+    {
+      "title": "6. Contact",
+      "body": "For any question about this privacy policy, contact us at hello@biofertmaroc.com."
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "common": {
+    "skipToContent": "Aller au contenu",
+    "loading": "Chargement…",
+    "close": "Fermer",
+    "back": "Retour",
+    "home": "Accueil",
+    "ratingOutOf5": "Note de {rating} sur 5",
+    "ratingOutOf5WithCount": "Note de {rating} sur 5 ({count} avis)",
+    "previousProducts": "Produits précédents",
+    "nextProducts": "Produits suivants"
+  },
+  "header": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "nosProduits": "Nos Produits",
+    "momentsDeVie": "Moments de Vie",
+    "ressources": "Ressources",
+    "promo": "Promo −50%",
+    "bilanPersonnalise": "Bilan personnalisé",
+    "search": "Rechercher",
+    "account": "Mon compte",
+    "openCart": "Ouvrir le panier, {count} articles",
+    "language": "Langue",
+    "announcements": {
+      "shipping": "🚚 Livraison en 24–48h partout au Maroc — Paiement à la livraison disponible",
+      "promo": "🎁 -50% sur <strong>BellaFert</strong> & <strong>FertiMen</strong> — Satisfait ou remboursé"
+    }
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "nav": {
+    "megaMenu": {
+      "elle": {
+        "label": "Elle",
+        "links": {
+          "bellafert": "BellaFert",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "lui": {
+        "label": "Lui",
+        "links": {
+          "fertimen": "FertiMen",
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men"
+        }
+      },
+      "duo": {
+        "label": "Duo",
+        "links": {
+          "packCouple": "Pack Couple"
+        }
+      },
+      "essentiels": {
+        "label": "Nos Essentiels",
+        "links": {
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "bestSellers": {
+        "label": "Best Sellers",
+        "links": {
+          "bellafert": "BellaFert",
+          "fertimen": "FertiMen",
+          "packCouple": "Pack Couple"
+        }
+      }
+    },
+    "resources": {
+      "blog": "Blog",
+      "guides": "Guides",
+      "faq": "FAQ",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "moments": {
+      "elle": "Fertilité Elle",
+      "lui": "Fertilité Lui",
+      "duo": "Duo Fertilité",
+      "vitaliteLui": "Vitalité Lui",
+      "performance": "Performance",
+      "detox": "Détox",
+      "sereniteElle": "Sérénité Elle",
+      "confortCycle": "Confort Cycle"
+    }
+  },
+  "mobileNav": {
+    "title": "Menu",
+    "ariaLabel": "Navigation du site"
+  },
+  "footer": {
+    "newsletterTitle": "Rejoignez la newsletter",
+    "newsletterBody": "Des conseils fertilité, pour elle et pour lui, directement dans votre boîte mail.",
+    "columns": {
+      "shop": "Nos Produits",
+      "company": "À propos",
+      "help": "Aide",
+      "contact": "Contact"
+    },
+    "addressLine1": "123 Avenue Wellness",
+    "addressLine2": "Casablanca, Maroc",
+    "rightsReserved": "Tous droits réservés.",
+    "shopLinks": {
+      "elle": "Elle",
+      "lui": "Lui",
+      "duo": "Duo",
+      "essentiels": "Nos Essentiels",
+      "bestSellers": "Best Sellers"
+    },
+    "companyLinks": {
+      "about": "À propos",
+      "blog": "Blog",
+      "reviews": "Avis clients",
+      "contact": "Contact"
+    },
+    "helpLinks": {
+      "faq": "FAQ",
+      "shipping": "Livraison & Retours",
+      "orderTracking": "Suivi de commande"
+    },
+    "legalLinks": {
+      "terms": "Conditions Générales de Vente",
+      "privacy": "Politique de Confidentialité"
+    }
+  },
+  "cart": {
+    "title": "Votre panier",
+    "titleWithCount": "Votre panier ({count})",
+    "close": "Fermer le panier",
+    "empty": "Votre panier est vide.",
+    "freeShippingRemaining": "Plus que <amount>ce montant</amount> pour profiter de la livraison gratuite",
+    "freeShippingUnlocked": "Livraison gratuite débloquée !",
+    "decreaseQuantity": "Diminuer la quantité de {product}",
+    "increaseQuantity": "Augmenter la quantité de {product}",
+    "removeItem": "Retirer {product} du panier",
+    "subtotal": "Sous-total",
+    "checkout": "Commander",
+    "updating": "Mise à jour…",
+    "taxesNote": "Taxes et frais de livraison calculés à la commande.",
+    "errors": {
+      "addToCart": "Impossible d'ajouter ce produit au panier.",
+      "removeFromCart": "Impossible de retirer ce produit.",
+      "updateQuantity": "Impossible de mettre à jour la quantité."
+    }
+  },
+  "checkout": {
+    "title": "Finaliser la commande",
+    "contactTitle": "Vos coordonnées",
+    "shippingTitle": "Adresse de livraison",
+    "notesLabel": "Notes de commande",
+    "summaryTitle": "Récapitulatif",
+    "subtotal": "Sous-total",
+    "total": "Total",
+    "shippingNote": "Les frais de livraison sont confirmés par notre équipe lors de l'appel de confirmation.",
+    "codNote": "Paiement à la livraison. Nous vous appelons pour confirmer votre commande avant expédition.",
+    "submit": "Commander",
+    "submitting": "Envoi en cours…",
+    "emptyTitle": "Votre panier est vide",
+    "emptyBody": "Ajoutez des produits à votre panier avant de passer commande.",
+    "emptyCta": "Découvrir nos produits",
+    "errors": {
+      "generic": "Nous n'avons pas pu enregistrer votre commande. Veuillez réessayer.",
+      "network": "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
+    }
+  },
+  "search": {
+    "placeholder": "Rechercher des produits, guides…",
+    "close": "Fermer la recherche",
+    "results": "Résultats",
+    "featured": "Sélection du moment",
+    "searching": "Recherche…",
+    "noResults": "Aucun produit ne correspond à « {query} ».",
+    "relatedArticles": "Articles liés"
+  },
+  "product": {
+    "from": "dès",
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Épuisé",
+    "quickAdd": "Ajouter",
+    "quickAddAria": "Ajouter {product} au panier",
+    "purchaseOption": "Option d'achat",
+    "mostEconomical": "Le plus économique",
+    "freeShippingNote": "Livraison gratuite dès 600 DH · Expédié sous 24 à 48h",
+    "breadcrumbAriaLabel": "Fil d'Ariane",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbShop": "Boutique",
+    "askTitle": "Une question sur {product} ?",
+    "askBody": "Obtenez rapidement une réponse à vos questions les plus fréquentes.",
+    "askPlaceholder": "Tapez votre question…",
+    "suggestedQuestions": [
+      "Est-ce sans danger en cas de grossesse ?",
+      "Au bout de combien de temps voit-on des résultats ?",
+      "Puis-je le prendre avec d'autres compléments ?"
+    ],
+    "accordions": {
+      "benefits": "Bienfaits",
+      "benefitsFallback": "Aucun bienfait renseigné.",
+      "ingredients": "Ingrédients",
+      "ingredientsFallback": "Liste complète des ingrédients disponible sur demande.",
+      "usage": "Utilisation",
+      "usageFallback": "Suivez les indications sur l'étiquette.",
+      "precautions": "Précautions",
+      "precautionsFallback": "Demandez conseil à votre médecin avant utilisation.",
+      "description": "Description complète"
+    },
+    "completeRoutine": "Complétez votre routine",
+    "goodToKnow": "Bon à savoir",
+    "badges": {
+      "best-seller": "Best-seller",
+      "new": "Nouveau",
+      "sans-iode": "Sans iode"
+    },
+    "viewImage": "Voir l'image {index}"
+  },
+  "collection": {
+    "productCount": "{count, plural, =0 {produit} =1 {produit} other {produits}}",
+    "noResults": "Aucun produit ne correspond à ce filtre.",
+    "filterAll": "Tous",
+    "filterNeed": "Besoin",
+    "sortBy": "Trier par",
+    "sort": {
+      "featured": "En vedette",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant",
+      "rating": "Mieux notés"
+    }
+  },
+  "home": {
+    "hero": {
+      "slide1": {
+        "title": "Devenir Parents.",
+        "description": "Boostez votre fertilité naturellement.",
+        "primaryCta": "Découvrir BellaFert",
+        "secondaryCta": "Découvrir FertiMen"
+      },
+      "slide2": {
+        "title": "Le Duo Fertilité",
+        "description": "BellaFert + FertiMen, pour les deux partenaires — livraison gratuite.",
+        "primaryCta": "Voir le Pack Couple",
+        "secondaryCta": "En savoir plus"
+      },
+      "previousSlide": "Diapositive précédente",
+      "nextSlide": "Diapositive suivante",
+      "goToSlide": "Aller à la diapositive {index}"
+    },
+    "trustpilot": {
+      "title": "Trustpilot",
+      "score": "TrustScore 4.8",
+      "reviewsLink": "2 000 avis",
+      "quoteTitle": "Merci BioFert !",
+      "quote": "Après 3 mois avec BellaFert, j'ai enfin eu la plus belle des nouvelles. Un accompagnement naturel qui a vraiment fait la différence.",
+      "quoteAuthor": "Fatima Z. — cliente vérifiée"
+    },
+    "vosMoments": {
+      "title": "Nos catégories",
+      "subtitle": "Un accompagnement naturel pour elle, pour lui, et pour vous deux."
+    },
+    "bestSellers": {
+      "title": "Best sellers",
+      "tabs": {
+        "populaire": "Best sellers",
+        "femme": "Elle",
+        "homme": "Lui",
+        "duo": "Duo",
+        "essentiels": "Nos essentiels"
+      }
+    },
+    "subscription": {
+      "socialProof": "+ de 2 000 clients nous font confiance !",
+      "title": "Votre bilan personnalisé, gratuit en 2 minutes",
+      "tiles": {
+        "free": { "title": "100% gratuit", "body": "Sans engagement, aucun frais" },
+        "fast": { "title": "2 minutes chrono", "body": "Un questionnaire rapide et simple" },
+        "instant": { "title": "Résultat immédiat", "body": "Votre recommandation à la fin du bilan" },
+        "expert": { "title": "Conseils d'experts", "body": "Basés sur votre profil de fertilité" },
+        "private": { "title": "100% confidentiel", "body": "Vos réponses restent privées" }
+      },
+      "cta": "Faire le bilan",
+      "imageAlt": "Femme enceinte tenant un flacon BioFert"
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "items": {
+        "clean": { "title": "Formules propres", "description": "Sans charges, ni colorants artificiels." },
+        "tested": { "title": "Testé par un tiers", "description": "Chaque lot est vérifié pour sa pureté." },
+        "responsible": { "title": "Fabriqué de façon responsable", "description": "Petits lots, sourcing traçable." },
+        "expert": { "title": "Formulé par des experts", "description": "Développé avec des gynécologues et sages-femmes." },
+        "approved": { "title": "Approuvé par les mamans", "description": "Façonné par les retours réels de notre communauté." }
+      }
+    },
+    "brandStoryFaq": {
+      "title": "Pourquoi BioFertMaroc",
+      "body": "Nous avons créé la marque que nous aurions aimé trouver — pensée pour elle et pour lui, sans tabou et sans jargon, avec des formules naturelles qui accompagnent vraiment votre parcours de fertilité."
+    },
+    "reviews": {
+      "title": "+2 000 clients\nnous font confiance",
+      "readAll": "Lire tous les avis",
+      "google": "Google",
+      "outOf5": "Sur 5",
+      "previous": "Avis précédents",
+      "next": "Avis suivants"
+    },
+    "quizCta": {
+      "title": "Vous ne savez pas par où commencer ?",
+      "body": "Faites notre bilan personnalisé en 2 minutes pour recevoir une recommandation adaptée à votre parcours de fertilité.",
+      "cta": "Faire le bilan"
+    },
+    "trustBadges": {
+      "delivery": { "title": "Livraison 24–48h", "body": "Partout au Maroc" },
+      "payment": { "title": "Paiement flexible", "body": "À la livraison ou par carte" },
+      "refund": { "title": "Satisfait ou remboursé", "body": "Garantie de remboursement" },
+      "rating": { "title": "4,8/5", "body": "Plus de 2 000 avis vérifiés" },
+      "certified": { "title": "Certifié GMP", "body": "Fabrication aux normes qualité" }
+    },
+    "blogGrid": {
+      "title": "Nos Guides Essentiels",
+      "viewAll": "Voir tous les guides",
+      "previous": "Guides précédents",
+      "next": "Guides suivants"
+    }
+  },
+  "blog": {
+    "listTitle": "Nos Guides Essentiels",
+    "listDescription": "La fertilité, expliquée simplement et appuyée par la science — pour elle, pour lui, et pour vous deux.",
+    "guidesCount": "{count, plural, =0 {guide} =1 {guide} other {guides}}",
+    "backToGuides": "← Tous les guides",
+    "readingTimeSuffix": "de lecture",
+    "relatedReading": "À lire aussi"
+  },
+  "guides": {
+    "title": "Nos Guides",
+    "description": "Des conseils pratiques et naturels pour soutenir votre fertilité, seul(e) ou à deux — écrits par l'équipe BioFertMaroc.",
+    "sections": {
+      "elle": { "label": "Pour Elle", "description": "Cycle, ovulation et équilibre hormonal." },
+      "lui": { "label": "Pour Lui", "description": "Fertilité masculine et habitudes qui comptent." },
+      "deux": { "label": "Pour Vous Deux", "description": "Nutrition, préconception et le protocole 3 mois." }
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "description": "Tout ce qu'il faut savoir sur nos produits, la livraison et vos commandes.",
+    "sections": {
+      "products": "Produits & Utilisation",
+      "shipping": "Livraison & Paiement",
+      "orders": "Commandes & Retours"
+    }
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "intro": "Des compléments 100% naturels, pensés au Maroc pour accompagner chaque étape du parcours de fertilité — seul(e) ou à deux.",
+    "whyTitle": "Pourquoi BioFertMaroc ?",
+    "paragraph1": "BioFertMaroc est né d'un constat simple : la fertilité concerne les deux partenaires, et pourtant l'accompagnement masculin reste souvent oublié. Nous avons voulu créer des formules pensées spécifiquement pour elle et pour lui, à prendre seul(e) ou ensemble.",
+    "paragraph2": "Chaque produit — BellaFert, FertiMen, Ferti Power, PowerMen, SmokeClean Men, Relaxes Woman, CycleCare — est formulé à partir d'actifs naturels, fabriqué dans des sites certifiés GMP, sans additifs artificiels.",
+    "paragraph3": "Nos protocoles sont pensés sur 3 mois, le temps que prend un cycle complet de maturation des ovules ou des spermatozoïdes. Pas de raccourci, juste de la régularité et des formules qui fonctionnent."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "description": "Une question sur un produit, une commande ou un partenariat ? Notre équipe vous répond sous 24 à 48h.",
+    "emailLabel": "Email",
+    "addressLabel": "Adresse",
+    "addressLine1": "123 Wellness Ave",
+    "addressLine2": "Casablanca, Morocco",
+    "shippingLabel": "Livraison & Paiement",
+    "shippingBody": "Livraison partout au Maroc en 24 à 48h. Paiement à la livraison ou par carte."
+  },
+  "forms": {
+    "contact": {
+      "nameLabel": "Nom",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+      "submit": "Envoyer le message",
+      "successTitle": "Merci, votre message a bien été envoyé !",
+      "successBody": "Notre équipe vous répondra sous 24 à 48h."
+    },
+    "newsletter": {
+      "emailLabel": "Adresse email",
+      "placeholder": "Votre adresse email",
+      "submit": "S'inscrire",
+      "success": "Merci pour votre inscription ! Surveillez votre boîte mail."
+    },
+    "checkout": {
+      "firstNameLabel": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastNameLabel": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "phoneLabel": "Téléphone",
+      "phonePlaceholder": "06 00 00 00 00",
+      "emailLabel": "Email (optionnel)",
+      "emailPlaceholder": "vous@exemple.com",
+      "addressLabel": "Adresse",
+      "addressPlaceholder": "Rue, numéro, quartier…",
+      "cityLabel": "Ville",
+      "cityPlaceholder": "Casablanca",
+      "provinceLabel": "Région",
+      "provincePlaceholder": "Sélectionner une région",
+      "zipLabel": "Code postal (optionnel)",
+      "zipPlaceholder": "20000",
+      "notesPlaceholder": "Instructions de livraison, créneau préféré…"
+    }
+  },
+  "quiz": {
+    "title": "Bilan personnalisé",
+    "intro": "Répondez à quelques questions pour recevoir une recommandation adaptée à votre situation. Vos réponses restent confidentielles.",
+    "userInfo": {
+      "title": "Commençons",
+      "subtitle": "Dites-nous en un peu plus sur vous avant de personnaliser votre bilan.",
+      "fullNameLabel": "Nom complet",
+      "fullNamePlaceholder": "Votre nom complet",
+      "phoneLabel": "Téléphone",
+      "phonePlaceholder": "Votre numéro de téléphone",
+      "emailLabel": "Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "continue": "Continuer"
+    },
+    "questionOf": "Question {current} sur {total}",
+    "back": "Précédent",
+    "needHelp": "Besoin d'aide ?",
+    "resultReady": "Votre bilan est prêt",
+    "weRecommend": "Nous vous recommandons {product}",
+    "discover": "Découvrir {product}",
+    "viewAllProducts": "Voir tous nos produits",
+    "restart": "Recommencer le questionnaire"
+  },
+  "legal": {
+    "lastUpdated": "Dernière mise à jour : janvier 2026",
+    "terms": {
+      "title": "Conditions Générales de Vente"
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité"
+    }
+  },
+  "notFound": {
+    "title": "Cette page est introuvable",
+    "body": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil"
+  },
+  "errorBoundary": {
+    "product": {
+      "title": "Impossible de charger ce produit",
+      "body": "Une erreur est survenue en récupérant les données depuis notre boutique. Réessayez dans un instant."
+    },
+    "collection": {
+      "title": "Impossible de charger cette collection",
+      "body": "Une erreur est survenue en récupérant les produits depuis notre boutique. Réessayez dans un instant."
+    },
+    "retry": "Réessayer"
+  },
+  "orderSuccess": {
+    "title": "Merci pour votre commande !",
+    "orderNumber": "Commande {number}",
+    "body": "Nous vous appellerons prochainement pour confirmer votre commande avant expédition.",
+    "continueShopping": "Continuer mes achats",
+    "notFoundTitle": "Commande introuvable",
+    "notFoundBody": "Nous n'avons pas retrouvé cette commande. Si vous venez de commander, contactez-nous."
+  },
+  "seo": {
+    "home": {
+      "title": "Des compléments naturels pour votre fertilité",
+      "description": "Compléments alimentaires 100% naturels pour soutenir la fertilité féminine, masculine et de couple, formulés au Maroc."
+    },
+    "about": {
+      "title": "À Propos",
+      "description": "L'histoire de BioFertMaroc : des compléments naturels pensés pour accompagner la fertilité, pour elle, pour lui et pour vous deux."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Conseils sur la fertilité féminine, masculine et le parcours à deux, par l'équipe BioFertMaroc."
+    },
+    "checkout": {
+      "title": "Finaliser la commande",
+      "description": "Finalisez votre commande BioFertMaroc en toute simplicité. Paiement à la livraison."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactez l'équipe BioFertMaroc pour toute question sur nos produits ou votre commande."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Réponses aux questions les plus fréquentes sur les produits, la livraison et les commandes BioFertMaroc."
+    },
+    "guides": {
+      "title": "Guides",
+      "description": "Nos guides sur la fertilité féminine, masculine et le parcours à deux, écrits par l'équipe BioFertMaroc."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "description": "Politique de confidentialité de BioFertMaroc."
+    },
+    "quiz": {
+      "title": "Bilan personnalisé",
+      "description": "Répondez à quelques questions pour recevoir une recommandation adaptée à votre parcours de fertilité."
+    },
+    "terms": {
+      "title": "Conditions Générales de Vente",
+      "description": "Conditions générales de vente de BioFertMaroc."
+    }
+  }
+}

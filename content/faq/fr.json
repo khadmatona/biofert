@@ -1,0 +1,59 @@
+{
+  "sections": [
+    {
+      "key": "products",
+      "items": [
+        {
+          "question": "Combien de temps avant de voir des résultats ?",
+          "answer": "Nos formules sont pensées pour un protocole de 3 mois : un cycle complet de maturation des ovules ou des spermatozoïdes dure environ 90 jours. Il est rare de voir des résultats avant la fin du premier cycle de 3 mois — la régularité compte plus que la vitesse."
+        },
+        {
+          "question": "Vos produits sont-ils sûrs et certifiés ?",
+          "answer": "Oui. Tous nos compléments sont 100% naturels, fabriqués dans des sites certifiés GMP, sans additifs artificiels."
+        },
+        {
+          "question": "Puis-je prendre BellaFert et FertiMen en couple ?",
+          "answer": "Tout à fait — c'est exactement l'objectif du Pack Couple, qui réunit BellaFert et FertiMen pour accompagner les deux partenaires en même temps."
+        },
+        {
+          "question": "Dois-je consulter un médecin avant de commencer ?",
+          "answer": "Nous recommandons de demander conseil à votre médecin en cas de grossesse, d'allaitement ou de traitement en cours. Chaque fiche produit détaille les précautions spécifiques."
+        }
+      ]
+    },
+    {
+      "key": "shipping",
+      "items": [
+        {
+          "question": "Quels sont les délais de livraison ?",
+          "answer": "Nous livrons partout au Maroc en 24 à 48h ouvrées."
+        },
+        {
+          "question": "Quels moyens de paiement acceptez-vous ?",
+          "answer": "Vous pouvez payer à la livraison ou par carte bancaire, selon votre préférence."
+        },
+        {
+          "question": "Livrez-vous en dehors du Maroc ?",
+          "answer": "Pour le moment, nos livraisons sont limitées au territoire marocain. Contactez-nous si vous avez une demande spécifique."
+        }
+      ]
+    },
+    {
+      "key": "orders",
+      "items": [
+        {
+          "question": "Que faire si je ne suis pas satisfait(e) ?",
+          "answer": "Tous nos produits sont couverts par notre garantie satisfait ou remboursé. Contactez-nous et nous trouverons une solution rapidement."
+        },
+        {
+          "question": "Comment suivre ma commande ?",
+          "answer": "Un lien de suivi vous est envoyé dès l'expédition de votre commande. Pour toute question, notre équipe reste joignable à hello@biofertmaroc.com."
+        },
+        {
+          "question": "Puis-je modifier ou annuler ma commande ?",
+          "answer": "Contactez-nous le plus tôt possible après votre achat — tant que la commande n'est pas expédiée, nous pouvons généralement la modifier ou l'annuler."
+        }
+      ]
+    }
+  ]
+}

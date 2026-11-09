@@ -1,0 +1,512 @@
+{
+  "common": {
+    "skipToContent": "الانتقال إلى المحتوى",
+    "loading": "جارٍ التحميل…",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "home": "الرئيسية",
+    "ratingOutOf5": "تقييم {rating} من 5",
+    "ratingOutOf5WithCount": "تقييم {rating} من 5 ({count} تقييم)",
+    "previousProducts": "المنتجات السابقة",
+    "nextProducts": "المنتجات التالية"
+  },
+  "header": {
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "nosProduits": "منتجاتنا",
+    "momentsDeVie": "لحظات الحياة",
+    "ressources": "موارد",
+    "promo": "تخفيض −50%",
+    "bilanPersonnalise": "تقييم شخصي",
+    "search": "بحث",
+    "account": "حسابي",
+    "openCart": "فتح السلة، {count} عناصر",
+    "language": "اللغة",
+    "announcements": {
+      "shipping": "🚚 توصيل خلال 24–48 ساعة في جميع أنحاء المغرب — الدفع عند الاستلام متاح",
+      "promo": "🎁 خصم 50% على <strong>BellaFert</strong> و<strong>FertiMen</strong> — ضمان استرداد الأموال"
+    }
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "nav": {
+    "megaMenu": {
+      "elle": {
+        "label": "لها",
+        "links": {
+          "bellafert": "BellaFert",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "lui": {
+        "label": "له",
+        "links": {
+          "fertimen": "FertiMen",
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men"
+        }
+      },
+      "duo": {
+        "label": "ثنائي",
+        "links": {
+          "packCouple": "باقة الزوجين"
+        }
+      },
+      "essentiels": {
+        "label": "أساسياتنا",
+        "links": {
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "bestSellers": {
+        "label": "الأكثر مبيعًا",
+        "links": {
+          "bellafert": "BellaFert",
+          "fertimen": "FertiMen",
+          "packCouple": "باقة الزوجين"
+        }
+      }
+    },
+    "resources": {
+      "blog": "المدونة",
+      "guides": "أدلة",
+      "faq": "الأسئلة الشائعة",
+      "about": "من نحن",
+      "contact": "اتصل بنا"
+    },
+    "moments": {
+      "elle": "خصوبة لها",
+      "lui": "خصوبة له",
+      "duo": "خصوبة الزوجين",
+      "vitaliteLui": "حيوية له",
+      "performance": "الأداء",
+      "detox": "تخلص من السموم",
+      "sereniteElle": "هدوء لها",
+      "confortCycle": "راحة الدورة"
+    }
+  },
+  "mobileNav": {
+    "title": "القائمة",
+    "ariaLabel": "تصفح الموقع"
+  },
+  "footer": {
+    "newsletterTitle": "انضمي/انضم إلى نشرتنا الإخبارية",
+    "newsletterBody": "نصائح حول الخصوبة، لها وله، مباشرة في بريدك الإلكتروني.",
+    "columns": {
+      "shop": "منتجاتنا",
+      "company": "من نحن",
+      "help": "المساعدة",
+      "contact": "اتصل بنا"
+    },
+    "addressLine1": "123 شارع ويلنس",
+    "addressLine2": "الدار البيضاء، المغرب",
+    "rightsReserved": "جميع الحقوق محفوظة.",
+    "shopLinks": {
+      "elle": "لها",
+      "lui": "له",
+      "duo": "ثنائي",
+      "essentiels": "أساسياتنا",
+      "bestSellers": "الأكثر مبيعًا"
+    },
+    "companyLinks": {
+      "about": "من نحن",
+      "blog": "المدونة",
+      "reviews": "آراء العملاء",
+      "contact": "اتصل بنا"
+    },
+    "helpLinks": {
+      "faq": "الأسئلة الشائعة",
+      "shipping": "الشحن والإرجاع",
+      "orderTracking": "تتبع الطلب"
+    },
+    "legalLinks": {
+      "terms": "الشروط العامة للبيع",
+      "privacy": "سياسة الخصوصية"
+    }
+  },
+  "cart": {
+    "title": "سلتك",
+    "titleWithCount": "سلتك ({count})",
+    "close": "إغلاق السلة",
+    "empty": "سلتك فارغة.",
+    "freeShippingRemaining": "لم يتبقَّ سوى <amount>هذا المبلغ</amount> للاستفادة من الشحن المجاني",
+    "freeShippingUnlocked": "تم تفعيل الشحن المجاني!",
+    "decreaseQuantity": "إنقاص كمية {product}",
+    "increaseQuantity": "زيادة كمية {product}",
+    "removeItem": "إزالة {product} من السلة",
+    "subtotal": "المجموع الفرعي",
+    "checkout": "إتمام الطلب",
+    "updating": "جارٍ التحديث…",
+    "taxesNote": "تُحتسب الضرائب ورسوم الشحن عند الطلب.",
+    "errors": {
+      "addToCart": "تعذّرت إضافة هذا المنتج إلى السلة.",
+      "removeFromCart": "تعذّرت إزالة هذا المنتج.",
+      "updateQuantity": "تعذّر تحديث الكمية."
+    }
+  },
+  "checkout": {
+    "title": "إتمام الطلب",
+    "contactTitle": "معلوماتك",
+    "shippingTitle": "عنوان التوصيل",
+    "notesLabel": "ملاحظات الطلب",
+    "summaryTitle": "ملخص الطلب",
+    "subtotal": "المجموع الفرعي",
+    "total": "المجموع",
+    "shippingNote": "يتم تأكيد رسوم التوصيل من طرف فريقنا أثناء مكالمة التأكيد.",
+    "codNote": "الدفع عند الاستلام. سنتصل بك لتأكيد طلبك قبل الشحن.",
+    "submit": "إتمام الطلب",
+    "submitting": "جارٍ الإرسال…",
+    "emptyTitle": "سلتك فارغة",
+    "emptyBody": "أضف منتجات إلى سلتك قبل إتمام الطلب.",
+    "emptyCta": "اكتشف منتجاتنا",
+    "errors": {
+      "generic": "تعذّر تسجيل طلبك. يرجى المحاولة مجددًا.",
+      "network": "تعذّر الاتصال بالخادم. تحقق من اتصالك وحاول مجددًا."
+    }
+  },
+  "search": {
+    "placeholder": "ابحث عن منتجات، أدلة…",
+    "close": "إغلاق البحث",
+    "results": "النتائج",
+    "featured": "مختارات اللحظة",
+    "searching": "جارٍ البحث…",
+    "noResults": "لا يوجد منتج مطابق لـ «{query}».",
+    "relatedArticles": "مقالات ذات صلة"
+  },
+  "product": {
+    "from": "ابتداءً من",
+    "addToCart": "أضف إلى السلة",
+    "outOfStock": "نفدت الكمية",
+    "quickAdd": "إضافة",
+    "quickAddAria": "إضافة {product} إلى السلة",
+    "purchaseOption": "خيار الشراء",
+    "mostEconomical": "الأكثر اقتصادًا",
+    "freeShippingNote": "شحن مجاني ابتداءً من 600 درهم · التوصيل خلال 24 إلى 48 ساعة",
+    "breadcrumbAriaLabel": "مسار التنقل",
+    "breadcrumbHome": "الرئيسية",
+    "breadcrumbShop": "المتجر",
+    "askTitle": "لديك سؤال حول {product}؟",
+    "askBody": "احصل بسرعة على إجابة لأكثر الأسئلة شيوعًا.",
+    "askPlaceholder": "اكتب سؤالك…",
+    "suggestedQuestions": [
+      "هل هو آمن أثناء الحمل؟",
+      "بعد كم من الوقت تظهر النتائج؟",
+      "هل يمكنني تناوله مع مكملات أخرى؟"
+    ],
+    "accordions": {
+      "benefits": "الفوائد",
+      "benefitsFallback": "لا توجد فوائد مذكورة.",
+      "ingredients": "المكونات",
+      "ingredientsFallback": "قائمة المكونات الكاملة متوفرة عند الطلب.",
+      "usage": "طريقة الاستخدام",
+      "usageFallback": "اتبع الإرشادات الموجودة على الملصق.",
+      "precautions": "احتياطات",
+      "precautionsFallback": "اطلب مشورة طبيبك قبل الاستخدام.",
+      "description": "الوصف الكامل"
+    },
+    "completeRoutine": "أكمل روتينك",
+    "goodToKnow": "معلومات مفيدة",
+    "badges": {
+      "best-seller": "الأكثر مبيعًا",
+      "new": "جديد",
+      "sans-iode": "خالٍ من اليود"
+    },
+    "viewImage": "عرض الصورة {index}"
+  },
+  "collection": {
+    "productCount": "{count, plural, =0 {منتج} =1 {منتج} other {منتجات}}",
+    "noResults": "لا يوجد منتج مطابق لهذا الفلتر.",
+    "filterAll": "الكل",
+    "filterNeed": "الحاجة",
+    "sortBy": "الترتيب حسب",
+    "sort": {
+      "featured": "مميز",
+      "priceAsc": "السعر تصاعديًا",
+      "priceDesc": "السعر تنازليًا",
+      "rating": "الأعلى تقييمًا"
+    }
+  },
+  "home": {
+    "hero": {
+      "slide1": {
+        "title": "لنصبح أبًا وأمًا.",
+        "description": "عزّزي/عزّز خصوبتك بشكل طبيعي.",
+        "primaryCta": "اكتشف BellaFert",
+        "secondaryCta": "اكتشف FertiMen"
+      },
+      "slide2": {
+        "title": "ثنائي الخصوبة",
+        "description": "BellaFert وFertiMen، لكلا الشريكين — شحن مجاني.",
+        "primaryCta": "اكتشف باقة الزوجين",
+        "secondaryCta": "اعرف المزيد"
+      },
+      "previousSlide": "الشريحة السابقة",
+      "nextSlide": "الشريحة التالية",
+      "goToSlide": "الانتقال إلى الشريحة {index}"
+    },
+    "trustpilot": {
+      "title": "Trustpilot",
+      "score": "تقييم الثقة 4.8",
+      "reviewsLink": "2000 تقييم",
+      "quoteTitle": "شكرًا BioFert!",
+      "quote": "بعد 3 أشهر مع BellaFert، حصلت أخيرًا على أجمل الأخبار. مرافقة طبيعية أحدثت فرقًا حقيقيًا.",
+      "quoteAuthor": "فاطمة ز. — عميلة موثقة"
+    },
+    "vosMoments": {
+      "title": "فئاتنا",
+      "subtitle": "مرافقة طبيعية لها، وله، ولكما معًا."
+    },
+    "bestSellers": {
+      "title": "الأكثر مبيعًا",
+      "tabs": {
+        "populaire": "الأكثر مبيعًا",
+        "femme": "لها",
+        "homme": "له",
+        "duo": "ثنائي",
+        "essentiels": "أساسياتنا"
+      }
+    },
+    "subscription": {
+      "socialProof": "أكثر من 2000 عميل يثقون بنا!",
+      "title": "تقييمك الشخصي المجاني في دقيقتين",
+      "tiles": {
+        "free": { "title": "مجاني 100%", "body": "بدون التزام، بدون رسوم" },
+        "fast": { "title": "دقيقتان فقط", "body": "استبيان سريع وبسيط" },
+        "instant": { "title": "نتيجة فورية", "body": "توصيتك في نهاية التقييم" },
+        "expert": { "title": "نصائح الخبراء", "body": "بناءً على ملفك الخاص بالخصوبة" },
+        "private": { "title": "سرية تامة", "body": "إجاباتك تبقى خاصة" }
+      },
+      "cta": "ابدأ التقييم",
+      "imageAlt": "امرأة حامل تحمل عبوة BioFert"
+    },
+    "values": {
+      "title": "قيمنا",
+      "items": {
+        "clean": { "title": "تركيبات نظيفة", "description": "بدون مواد حشو أو ألوان اصطناعية." },
+        "tested": { "title": "مختبر من طرف ثالث", "description": "يتم فحص كل دفعة للتحقق من نقائها." },
+        "responsible": { "title": "تصنيع مسؤول", "description": "دفعات صغيرة، ومصادر قابلة للتتبع." },
+        "expert": { "title": "بتركيبة الخبراء", "description": "تم تطويرها مع أطباء نساء وقابلات." },
+        "approved": { "title": "معتمد من الأمهات", "description": "مستوحى من آراء حقيقية من مجتمعنا." }
+      }
+    },
+    "brandStoryFaq": {
+      "title": "لماذا BioFertMaroc",
+      "body": "لقد أنشأنا العلامة التي كنا نتمنى إيجادها — مصممة لها وله، دون محظورات أو مصطلحات معقدة، بتركيبات طبيعية ترافقك فعليًا في رحلة الخصوبة."
+    },
+    "reviews": {
+      "title": "أكثر من 2000 عميل\nيثقون بنا",
+      "readAll": "اقرأ جميع التقييمات",
+      "google": "Google",
+      "outOf5": "من 5",
+      "previous": "التقييمات السابقة",
+      "next": "التقييمات التالية"
+    },
+    "quizCta": {
+      "title": "لا تعرفين/تعرف من أين تبدأ؟",
+      "body": "قومي/قم بإجراء تقييمنا الشخصي في دقيقتين للحصول على توصية ملائمة لرحلة خصوبتك.",
+      "cta": "ابدأ التقييم"
+    },
+    "trustBadges": {
+      "delivery": { "title": "توصيل خلال 24–48 ساعة", "body": "في جميع أنحاء المغرب" },
+      "payment": { "title": "دفع مرن", "body": "عند التسليم أو بالبطاقة" },
+      "refund": { "title": "ضمان استرداد الأموال", "body": "رضاكم مضمون" },
+      "rating": { "title": "4.8/5", "body": "أكثر من 2000 تقييم موثق" },
+      "certified": { "title": "معتمد GMP", "body": "تصنيع وفق معايير الجودة" }
+    },
+    "blogGrid": {
+      "title": "أدلتنا الأساسية",
+      "viewAll": "عرض جميع الأدلة",
+      "previous": "الأدلة السابقة",
+      "next": "الأدلة التالية"
+    }
+  },
+  "blog": {
+    "listTitle": "أدلتنا الأساسية",
+    "listDescription": "الخصوبة، مشروحة ببساطة ومدعومة بالعلم — لها وله ولكما معًا.",
+    "guidesCount": "{count, plural, =0 {دليل} =1 {دليل} other {أدلة}}",
+    "backToGuides": "← جميع الأدلة",
+    "readingTimeSuffix": "قراءة",
+    "relatedReading": "اقرأ أيضًا"
+  },
+  "guides": {
+    "title": "أدلتنا",
+    "description": "نصائح عملية وطبيعية لدعم خصوبتك، بمفردك أو كزوجين — كتبها فريق BioFertMaroc.",
+    "sections": {
+      "elle": { "label": "لها", "description": "الدورة الشهرية، الإباضة والتوازن الهرموني." },
+      "lui": { "label": "له", "description": "الخصوبة الذكرية والعادات المهمة." },
+      "deux": { "label": "لكما معًا", "description": "التغذية، ما قبل الحمل، وبروتوكول 3 أشهر." }
+    }
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "description": "كل ما تحتاج معرفته حول منتجاتنا والشحن وطلباتك.",
+    "sections": {
+      "products": "المنتجات والاستخدام",
+      "shipping": "الشحن والدفع",
+      "orders": "الطلبات والإرجاع"
+    }
+  },
+  "about": {
+    "title": "قصتنا",
+    "intro": "مكملات طبيعية 100%، صُنعت في المغرب لمرافقة كل مرحلة من رحلة الخصوبة — بمفردك أو كزوجين.",
+    "whyTitle": "لماذا BioFertMaroc؟",
+    "paragraph1": "وُلدت BioFertMaroc من ملاحظة بسيطة: الخصوبة تخص كلا الشريكين، ومع ذلك لا تزال مرافقة الرجل مهملة غالبًا. أردنا إنشاء تركيبات مصممة خصيصًا لها وله، تُؤخذ بمفردها أو معًا.",
+    "paragraph2": "كل منتج — BellaFert وFertiMen وFerti Power وPowerMen وSmokeClean Men وRelaxes Woman وCycleCare — مصنوع من مكونات فعالة طبيعية، ومصنّع في مواقع معتمدة GMP، وخالٍ من المواد المضافة الاصطناعية.",
+    "paragraph3": "صُممت بروتوكولاتنا على مدى 3 أشهر، وهي المدة التي تستغرقها دورة النضج الكاملة للبويضات أو الحيوانات المنوية. لا اختصارات، فقط انتظام وتركيبات فعّالة."
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "description": "سؤال حول منتج أو طلب أو شراكة؟ فريقنا يرد خلال 24 إلى 48 ساعة.",
+    "emailLabel": "البريد الإلكتروني",
+    "addressLabel": "العنوان",
+    "addressLine1": "123 شارع ويلنس",
+    "addressLine2": "الدار البيضاء، المغرب",
+    "shippingLabel": "الشحن والدفع",
+    "shippingBody": "التوصيل إلى جميع أنحاء المغرب خلال 24 إلى 48 ساعة. الدفع عند الاستلام أو بالبطاقة."
+  },
+  "forms": {
+    "contact": {
+      "nameLabel": "الاسم",
+      "namePlaceholder": "اسمك",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "الرسالة",
+      "messagePlaceholder": "كيف يمكننا مساعدتك؟",
+      "submit": "إرسال الرسالة",
+      "successTitle": "شكرًا، تم إرسال رسالتك بنجاح!",
+      "successBody": "سيرد فريقنا خلال 24 إلى 48 ساعة."
+    },
+    "newsletter": {
+      "emailLabel": "عنوان البريد الإلكتروني",
+      "placeholder": "عنوان بريدك الإلكتروني",
+      "submit": "اشتراك",
+      "success": "شكرًا لاشتراكك! راقب بريدك الإلكتروني."
+    },
+    "checkout": {
+      "firstNameLabel": "الاسم الشخصي",
+      "firstNamePlaceholder": "اسمك الشخصي",
+      "lastNameLabel": "الاسم العائلي",
+      "lastNamePlaceholder": "اسمك العائلي",
+      "phoneLabel": "الهاتف",
+      "phonePlaceholder": "06 00 00 00 00",
+      "emailLabel": "البريد الإلكتروني (اختياري)",
+      "emailPlaceholder": "you@example.com",
+      "addressLabel": "العنوان",
+      "addressPlaceholder": "الشارع، الرقم، الحي…",
+      "cityLabel": "المدينة",
+      "cityPlaceholder": "الدار البيضاء",
+      "provinceLabel": "الجهة",
+      "provincePlaceholder": "اختر جهة",
+      "zipLabel": "الرمز البريدي (اختياري)",
+      "zipPlaceholder": "20000",
+      "notesPlaceholder": "تعليمات التوصيل، الوقت المفضل…"
+    }
+  },
+  "quiz": {
+    "title": "تقييم شخصي",
+    "intro": "أجب عن بعض الأسئلة للحصول على توصية ملائمة لحالتك. تبقى إجاباتك سرية.",
+    "userInfo": {
+      "title": "لنبدأ",
+      "subtitle": "أخبرنا قليلاً عن نفسك قبل أن نخصص تقييمك.",
+      "fullNameLabel": "الاسم الكامل",
+      "fullNamePlaceholder": "اسمك الكامل",
+      "phoneLabel": "الهاتف",
+      "phonePlaceholder": "رقم هاتفك",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "you@example.com",
+      "continue": "متابعة"
+    },
+    "questionOf": "السؤال {current} من {total}",
+    "back": "السابق",
+    "needHelp": "بحاجة إلى مساعدة؟",
+    "resultReady": "تقييمك جاهز",
+    "weRecommend": "نوصي بـ {product}",
+    "discover": "اكتشف {product}",
+    "viewAllProducts": "عرض جميع منتجاتنا",
+    "restart": "إعادة الاستبيان"
+  },
+  "legal": {
+    "lastUpdated": "آخر تحديث: يناير 2026",
+    "terms": {
+      "title": "الشروط العامة للبيع"
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية"
+    }
+  },
+  "notFound": {
+    "title": "هذه الصفحة غير موجودة",
+    "body": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backHome": "العودة إلى الرئيسية"
+  },
+  "errorBoundary": {
+    "product": {
+      "title": "تعذّر تحميل هذا المنتج",
+      "body": "حدث خطأ أثناء جلب البيانات من متجرنا. يرجى المحاولة مجددًا بعد لحظات."
+    },
+    "collection": {
+      "title": "تعذّر تحميل هذه المجموعة",
+      "body": "حدث خطأ أثناء جلب المنتجات من متجرنا. يرجى المحاولة مجددًا بعد لحظات."
+    },
+    "retry": "إعادة المحاولة"
+  },
+  "orderSuccess": {
+    "title": "شكرًا على طلبك!",
+    "orderNumber": "الطلب {number}",
+    "body": "سنتصل بك قريبًا لتأكيد طلبك قبل الشحن.",
+    "continueShopping": "متابعة التسوق",
+    "notFoundTitle": "الطلب غير موجود",
+    "notFoundBody": "لم نتمكن من العثور على هذا الطلب. إذا قمت بالطلب للتو، يرجى التواصل معنا."
+  },
+  "seo": {
+    "home": {
+      "title": "مكملات طبيعية لخصوبتك",
+      "description": "مكملات غذائية طبيعية 100% لدعم الخصوبة عند المرأة والرجل والزوجين، مصنّعة في المغرب."
+    },
+    "about": {
+      "title": "من نحن",
+      "description": "قصة BioFertMaroc: مكملات طبيعية مصممة لدعم الخصوبة، لها وله ولكما معًا."
+    },
+    "blog": {
+      "title": "المدونة",
+      "description": "نصائح حول خصوبة المرأة والرجل ورحلة الزوجين، من فريق BioFertMaroc."
+    },
+    "checkout": {
+      "title": "إتمام الطلب",
+      "description": "أتمم طلبك من BioFertMaroc بكل سهولة. الدفع عند الاستلام."
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "description": "تواصل مع فريق BioFertMaroc لأي سؤال حول منتجاتنا أو طلبك."
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "description": "إجابات عن الأسئلة الأكثر شيوعًا حول منتجات BioFertMaroc والشحن والطلبات."
+    },
+    "guides": {
+      "title": "أدلة",
+      "description": "أدلتنا حول خصوبة المرأة والرجل ورحلة الزوجين، كتبها فريق BioFertMaroc."
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية",
+      "description": "سياسة الخصوصية الخاصة بـ BioFertMaroc."
+    },
+    "quiz": {
+      "title": "تقييم شخصي",
+      "description": "أجب عن بعض الأسئلة للحصول على توصية ملائمة لرحلة خصوبتك."
+    },
+    "terms": {
+      "title": "الشروط العامة للبيع",
+      "description": "الشروط العامة للبيع الخاصة بـ BioFertMaroc."
+    }
+  }
+}

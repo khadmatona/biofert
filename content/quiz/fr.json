@@ -1,0 +1,103 @@
+{
+  "questions": {
+    "age": {
+      "question": "Quel est votre âge ?",
+      "options": {
+        "under25": "Moins de 25 ans",
+        "25to29": "25–29 ans",
+        "30to34": "30–34 ans",
+        "35to39": "35–39 ans",
+        "40plus": "40 ans ou plus"
+      }
+    },
+    "who": {
+      "question": "Chez qui le problème de fertilité a-t-il été identifié ou suspecté ?",
+      "options": {
+        "woman": "La femme",
+        "man": "L'homme",
+        "both": "Les deux",
+        "unsure": "Nous ne savons pas encore"
+      }
+    },
+    "duration": {
+      "question": "Depuis combien de temps essayez-vous d'avoir un enfant ?",
+      "options": {
+        "lessThan1y": "Moins d'un an",
+        "1to2y": "1–2 ans",
+        "2to4y": "2–4 ans",
+        "moreThan4y": "Plus de 4 ans"
+      }
+    },
+    "pregnancy": {
+      "question": "Une grossesse a-t-elle déjà eu lieu ?",
+      "options": {
+        "fullTerm": "Oui, grossesse menée à terme",
+        "oneMiscarriage": "Oui, avec une fausse couche",
+        "multipleMiscarriages": "Oui, avec plusieurs fausses couches",
+        "none": "Non, aucune grossesse à ce jour"
+      }
+    },
+    "womanCause": {
+      "question": "Si le problème concerne la femme, quelle situation correspond le mieux à votre cas ?",
+      "options": {
+        "pcos": "Syndrome des ovaires polykystiques (SOPK)",
+        "ovulationIssues": "Troubles ou faiblesse de l'ovulation",
+        "lowOvarianReserve": "Faible réserve ovarienne",
+        "blockedTubes": "Trompes obstruées",
+        "endometriosis": "Endométriose",
+        "hormonalIssues": "Troubles hormonaux",
+        "irregularCycles": "Cycles irréguliers ou absents",
+        "noDiagnosis": "Aucun diagnostic / examens non réalisés",
+        "other": "Autre"
+      }
+    },
+    "manCause": {
+      "question": "Si le problème concerne l'homme, quelle situation correspond le mieux à votre cas ?",
+      "options": {
+        "lowSpermCount": "Faible nombre de spermatozoïdes",
+        "lowMotility": "Faible mobilité des spermatozoïdes",
+        "morphologyIssues": "Anomalies morphologiques des spermatozoïdes",
+        "azoospermia": "Absence de spermatozoïdes (azoospermie)",
+        "varicocele": "Varicocèle",
+        "hormonalIssues": "Troubles hormonaux",
+        "erectionEjaculationIssues": "Troubles de l'érection ou de l'éjaculation",
+        "noDiagnosis": "Aucun diagnostic / examens non réalisés",
+        "other": "Autre"
+      }
+    },
+    "exams": {
+      "question": "Avez-vous déjà réalisé des examens ou consulté un médecin pour ce retard de grossesse ?",
+      "options": {
+        "fullDiagnosis": "Oui, nous avons les examens et un diagnostic",
+        "someExams": "Nous avons réalisé certains examens seulement",
+        "priorTreatment": "Nous avons déjà suivi un traitement",
+        "notYet": "Non, pas encore"
+      }
+    },
+    "goal": {
+      "question": "Quel est votre objectif principal aujourd'hui ?",
+      "options": {
+        "naturalPregnancy": "Soutenir les chances de grossesse naturellement",
+        "improveOvulation": "Améliorer l'ovulation et le cycle",
+        "ovarianHealth": "Soutenir la santé et la réserve ovarienne",
+        "spermCountMotility": "Améliorer le nombre et la mobilité des spermatozoïdes",
+        "coupleFertility": "Soutenir la fertilité du couple",
+        "identifyBestSupport": "Identifier l'accompagnement le plus adapté à notre situation"
+      }
+    }
+  },
+  "recommendations": {
+    "bellafert": {
+      "title": "BellaFert",
+      "description": "Notre formule pensée pour soutenir l'ovulation et l'équilibre hormonal féminin."
+    },
+    "fertimen": {
+      "title": "FertiMen",
+      "description": "Notre formule pensée pour soutenir la testostérone, l'énergie et la fertilité masculine."
+    },
+    "packCouple": {
+      "title": "Pack Couple",
+      "description": "BellaFert + FertiMen : le duo complet pour accompagner votre fertilité à deux."
+    }
+  }
+}

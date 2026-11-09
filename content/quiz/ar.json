@@ -1,0 +1,103 @@
+{
+  "questions": {
+    "age": {
+      "question": "كم عمرك؟",
+      "options": {
+        "under25": "أقل من 25 سنة",
+        "25to29": "25–29 سنة",
+        "30to34": "30–34 سنة",
+        "35to39": "35–39 سنة",
+        "40plus": "40 سنة فأكثر"
+      }
+    },
+    "who": {
+      "question": "لدى من تم تحديد أو الاشتباه في مشكلة الخصوبة؟",
+      "options": {
+        "woman": "المرأة",
+        "man": "الرجل",
+        "both": "كلاهما",
+        "unsure": "لا نعرف بعد"
+      }
+    },
+    "duration": {
+      "question": "منذ متى تحاولان إنجاب طفل؟",
+      "options": {
+        "lessThan1y": "أقل من سنة",
+        "1to2y": "1–2 سنة",
+        "2to4y": "2–4 سنوات",
+        "moreThan4y": "أكثر من 4 سنوات"
+      }
+    },
+    "pregnancy": {
+      "question": "هل سبق أن حدث حمل؟",
+      "options": {
+        "fullTerm": "نعم، حمل مكتمل",
+        "oneMiscarriage": "نعم، مع إجهاض واحد",
+        "multipleMiscarriages": "نعم، مع عدة حالات إجهاض",
+        "none": "لا يوجد حمل حتى الآن"
+      }
+    },
+    "womanCause": {
+      "question": "إذا كانت المشكلة تخص المرأة، أي وضع يطابق حالتك أكثر؟",
+      "options": {
+        "pcos": "متلازمة تكيس المبايض (SOPK)",
+        "ovulationIssues": "اضطرابات أو ضعف في الإباضة",
+        "lowOvarianReserve": "ضعف المخزون المبيضي",
+        "blockedTubes": "انسداد قناتي فالوب",
+        "endometriosis": "بطانة الرحم المهاجرة",
+        "hormonalIssues": "اضطرابات هرمونية",
+        "irregularCycles": "دورات غير منتظمة أو غائبة",
+        "noDiagnosis": "لا يوجد تشخيص / لم تُجرَ فحوصات",
+        "other": "أخرى"
+      }
+    },
+    "manCause": {
+      "question": "إذا كانت المشكلة تخص الرجل، أي وضع يطابق حالتك أكثر؟",
+      "options": {
+        "lowSpermCount": "انخفاض عدد الحيوانات المنوية",
+        "lowMotility": "ضعف حركة الحيوانات المنوية",
+        "morphologyIssues": "تشوهات في شكل الحيوانات المنوية",
+        "azoospermia": "غياب الحيوانات المنوية (اللاحيوانية المنوية)",
+        "varicocele": "دوالي الخصية",
+        "hormonalIssues": "اضطرابات هرمونية",
+        "erectionEjaculationIssues": "مشاكل في الانتصاب أو القذف",
+        "noDiagnosis": "لا يوجد تشخيص / لم تُجرَ فحوصات",
+        "other": "أخرى"
+      }
+    },
+    "exams": {
+      "question": "هل سبق أن أجريتما فحوصات أو استشرتما طبيبًا بخصوص تأخر الحمل؟",
+      "options": {
+        "fullDiagnosis": "نعم، لدينا نتائج الفحوصات وتشخيص",
+        "someExams": "أجرينا بعض الفحوصات فقط",
+        "priorTreatment": "سبق أن تلقينا علاجًا",
+        "notYet": "لا، ليس بعد"
+      }
+    },
+    "goal": {
+      "question": "ما هو هدفك الرئيسي اليوم؟",
+      "options": {
+        "naturalPregnancy": "دعم فرص الحمل الطبيعي",
+        "improveOvulation": "تحسين الإباضة والدورة",
+        "ovarianHealth": "دعم صحة المبيض والمخزون المبيضي",
+        "spermCountMotility": "تحسين عدد وحركة الحيوانات المنوية",
+        "coupleFertility": "دعم خصوبة الزوجين",
+        "identifyBestSupport": "تحديد المرافقة الأنسب لحالتنا"
+      }
+    }
+  },
+  "recommendations": {
+    "bellafert": {
+      "title": "BellaFert",
+      "description": "تركيبتنا المصممة لدعم الإباضة والتوازن الهرموني عند المرأة."
+    },
+    "fertimen": {
+      "title": "FertiMen",
+      "description": "تركيبتنا المصممة لدعم هرمون التستوستيرون والطاقة والخصوبة عند الرجل."
+    },
+    "packCouple": {
+      "title": "باقة الزوجين",
+      "description": "BellaFert وFertiMen: الثنائي الكامل لمرافقة خصوبتكما معًا."
+    }
+  }
+}

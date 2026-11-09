@@ -1,0 +1,512 @@
+{
+  "common": {
+    "skipToContent": "Skip to content",
+    "loading": "Loading…",
+    "close": "Close",
+    "back": "Back",
+    "home": "Home",
+    "ratingOutOf5": "Rating {rating} out of 5",
+    "ratingOutOf5WithCount": "Rating {rating} out of 5 ({count} reviews)",
+    "previousProducts": "Previous products",
+    "nextProducts": "Next products"
+  },
+  "header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "nosProduits": "Our Products",
+    "momentsDeVie": "Life Moments",
+    "ressources": "Resources",
+    "promo": "Sale −50%",
+    "bilanPersonnalise": "Personalized Assessment",
+    "search": "Search",
+    "account": "My Account",
+    "openCart": "Open cart, {count} items",
+    "language": "Language",
+    "announcements": {
+      "shipping": "🚚 24–48h delivery anywhere in Morocco — Cash on delivery available",
+      "promo": "🎁 -50% off <strong>BellaFert</strong> & <strong>FertiMen</strong> — Money-back guarantee"
+    }
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "nav": {
+    "megaMenu": {
+      "elle": {
+        "label": "Her",
+        "links": {
+          "bellafert": "BellaFert",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "lui": {
+        "label": "Him",
+        "links": {
+          "fertimen": "FertiMen",
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men"
+        }
+      },
+      "duo": {
+        "label": "Duo",
+        "links": {
+          "packCouple": "Couple Pack"
+        }
+      },
+      "essentiels": {
+        "label": "Our Essentials",
+        "links": {
+          "fertiPower": "Ferti Power",
+          "powermen": "PowerMen",
+          "smokecleanMen": "SmokeClean Men",
+          "relaxesWoman": "Relaxes Woman",
+          "cyclecare": "CycleCare"
+        }
+      },
+      "bestSellers": {
+        "label": "Best Sellers",
+        "links": {
+          "bellafert": "BellaFert",
+          "fertimen": "FertiMen",
+          "packCouple": "Couple Pack"
+        }
+      }
+    },
+    "resources": {
+      "blog": "Blog",
+      "guides": "Guides",
+      "faq": "FAQ",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "moments": {
+      "elle": "Fertility for Her",
+      "lui": "Fertility for Him",
+      "duo": "Couple Fertility",
+      "vitaliteLui": "Vitality for Him",
+      "performance": "Performance",
+      "detox": "Detox",
+      "sereniteElle": "Serenity for Her",
+      "confortCycle": "Cycle Comfort"
+    }
+  },
+  "mobileNav": {
+    "title": "Menu",
+    "ariaLabel": "Site navigation"
+  },
+  "footer": {
+    "newsletterTitle": "Join the newsletter",
+    "newsletterBody": "Fertility tips, for her and for him, straight to your inbox.",
+    "columns": {
+      "shop": "Our Products",
+      "company": "About",
+      "help": "Help",
+      "contact": "Contact"
+    },
+    "addressLine1": "123 Avenue Wellness",
+    "addressLine2": "Casablanca, Morocco",
+    "rightsReserved": "All rights reserved.",
+    "shopLinks": {
+      "elle": "Her",
+      "lui": "Him",
+      "duo": "Duo",
+      "essentiels": "Our Essentials",
+      "bestSellers": "Best Sellers"
+    },
+    "companyLinks": {
+      "about": "About",
+      "blog": "Blog",
+      "reviews": "Customer Reviews",
+      "contact": "Contact"
+    },
+    "helpLinks": {
+      "faq": "FAQ",
+      "shipping": "Shipping & Returns",
+      "orderTracking": "Order Tracking"
+    },
+    "legalLinks": {
+      "terms": "Terms of Sale",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "cart": {
+    "title": "Your Cart",
+    "titleWithCount": "Your Cart ({count})",
+    "close": "Close cart",
+    "empty": "Your cart is empty.",
+    "freeShippingRemaining": "Only <amount>this amount</amount> left to unlock free shipping",
+    "freeShippingUnlocked": "Free shipping unlocked!",
+    "decreaseQuantity": "Decrease quantity of {product}",
+    "increaseQuantity": "Increase quantity of {product}",
+    "removeItem": "Remove {product} from cart",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "updating": "Updating…",
+    "taxesNote": "Taxes and shipping calculated at checkout.",
+    "errors": {
+      "addToCart": "This product couldn't be added to your cart.",
+      "removeFromCart": "This product couldn't be removed.",
+      "updateQuantity": "The quantity couldn't be updated."
+    }
+  },
+  "checkout": {
+    "title": "Complete your order",
+    "contactTitle": "Your details",
+    "shippingTitle": "Shipping address",
+    "notesLabel": "Order notes",
+    "summaryTitle": "Order summary",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "shippingNote": "Shipping costs are confirmed by our team during the confirmation call.",
+    "codNote": "Cash on delivery. We'll call you to confirm your order before it ships.",
+    "submit": "Place order",
+    "submitting": "Submitting…",
+    "emptyTitle": "Your cart is empty",
+    "emptyBody": "Add products to your cart before placing an order.",
+    "emptyCta": "Discover our products",
+    "errors": {
+      "generic": "We couldn't place your order right now. Please try again.",
+      "network": "Couldn't reach the server. Check your connection and try again."
+    }
+  },
+  "search": {
+    "placeholder": "Search products, guides…",
+    "close": "Close search",
+    "results": "Results",
+    "featured": "Featured picks",
+    "searching": "Searching…",
+    "noResults": "No product matches “{query}”.",
+    "relatedArticles": "Related articles"
+  },
+  "product": {
+    "from": "from",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Sold Out",
+    "quickAdd": "Add",
+    "quickAddAria": "Add {product} to cart",
+    "purchaseOption": "Purchase option",
+    "mostEconomical": "Best value",
+    "freeShippingNote": "Free shipping from 600 DH · Shipped within 24–48h",
+    "breadcrumbAriaLabel": "Breadcrumb",
+    "breadcrumbHome": "Home",
+    "breadcrumbShop": "Shop",
+    "askTitle": "A question about {product}?",
+    "askBody": "Get a quick answer to the most common questions.",
+    "askPlaceholder": "Type your question…",
+    "suggestedQuestions": [
+      "Is it safe during pregnancy?",
+      "How long before I see results?",
+      "Can I take it with other supplements?"
+    ],
+    "accordions": {
+      "benefits": "Benefits",
+      "benefitsFallback": "No benefits listed.",
+      "ingredients": "Ingredients",
+      "ingredientsFallback": "Full ingredient list available on request.",
+      "usage": "Usage",
+      "usageFallback": "Follow the directions on the label.",
+      "precautions": "Precautions",
+      "precautionsFallback": "Ask your doctor for advice before use.",
+      "description": "Full description"
+    },
+    "completeRoutine": "Complete your routine",
+    "goodToKnow": "Good to know",
+    "badges": {
+      "best-seller": "Best-seller",
+      "new": "New",
+      "sans-iode": "Iodine-free"
+    },
+    "viewImage": "View image {index}"
+  },
+  "collection": {
+    "productCount": "{count, plural, =0 {products} =1 {product} other {products}}",
+    "noResults": "No product matches this filter.",
+    "filterAll": "All",
+    "filterNeed": "Need",
+    "sortBy": "Sort by",
+    "sort": {
+      "featured": "Featured",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "rating": "Top rated"
+    }
+  },
+  "home": {
+    "hero": {
+      "slide1": {
+        "title": "Becoming Parents.",
+        "description": "Boost your fertility naturally.",
+        "primaryCta": "Discover BellaFert",
+        "secondaryCta": "Discover FertiMen"
+      },
+      "slide2": {
+        "title": "The Fertility Duo",
+        "description": "BellaFert + FertiMen, for both partners — free shipping.",
+        "primaryCta": "See the Couple Pack",
+        "secondaryCta": "Learn more"
+      },
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide",
+      "goToSlide": "Go to slide {index}"
+    },
+    "trustpilot": {
+      "title": "Trustpilot",
+      "score": "TrustScore 4.8",
+      "reviewsLink": "2,000 reviews",
+      "quoteTitle": "Thank you BioFert!",
+      "quote": "After 3 months with BellaFert, I finally got the best news of my life. A natural support that truly made the difference.",
+      "quoteAuthor": "Fatima Z. — verified customer"
+    },
+    "vosMoments": {
+      "title": "Our Categories",
+      "subtitle": "Natural support for her, for him, and for both of you."
+    },
+    "bestSellers": {
+      "title": "Best sellers",
+      "tabs": {
+        "populaire": "Best sellers",
+        "femme": "Her",
+        "homme": "Him",
+        "duo": "Duo",
+        "essentiels": "Our essentials"
+      }
+    },
+    "subscription": {
+      "socialProof": "Trusted by over 2,000 customers!",
+      "title": "Your free personalized assessment, in 2 minutes",
+      "tiles": {
+        "free": { "title": "100% free", "body": "No commitment, no fees" },
+        "fast": { "title": "2 minutes flat", "body": "A quick, simple questionnaire" },
+        "instant": { "title": "Instant result", "body": "Your recommendation at the end" },
+        "expert": { "title": "Expert advice", "body": "Based on your fertility profile" },
+        "private": { "title": "100% confidential", "body": "Your answers stay private" }
+      },
+      "cta": "Take the assessment",
+      "imageAlt": "Pregnant woman holding a BioFert bottle"
+    },
+    "values": {
+      "title": "Our values",
+      "items": {
+        "clean": { "title": "Clean formulas", "description": "No fillers, no artificial colors." },
+        "tested": { "title": "Third-party tested", "description": "Every batch is checked for purity." },
+        "responsible": { "title": "Responsibly made", "description": "Small batches, traceable sourcing." },
+        "expert": { "title": "Expert formulated", "description": "Developed with gynecologists and midwives." },
+        "approved": { "title": "Mom-approved", "description": "Shaped by real feedback from our community." }
+      }
+    },
+    "brandStoryFaq": {
+      "title": "Why BioFertMaroc",
+      "body": "We created the brand we wished existed — designed for her and for him, free of taboo and jargon, with natural formulas that truly support your fertility journey."
+    },
+    "reviews": {
+      "title": "2,000+ customers\ntrust us",
+      "readAll": "Read all reviews",
+      "google": "Google",
+      "outOf5": "Out of 5",
+      "previous": "Previous reviews",
+      "next": "Next reviews"
+    },
+    "quizCta": {
+      "title": "Not sure where to start?",
+      "body": "Take our 2-minute personalized assessment to get a recommendation tailored to your fertility journey.",
+      "cta": "Take the assessment"
+    },
+    "trustBadges": {
+      "delivery": { "title": "24–48h delivery", "body": "Anywhere in Morocco" },
+      "payment": { "title": "Flexible payment", "body": "Cash on delivery or by card" },
+      "refund": { "title": "Money-back guarantee", "body": "Satisfaction guaranteed" },
+      "rating": { "title": "4.8/5", "body": "Over 2,000 verified reviews" },
+      "certified": { "title": "GMP certified", "body": "Manufactured to quality standards" }
+    },
+    "blogGrid": {
+      "title": "Our Essential Guides",
+      "viewAll": "View all guides",
+      "previous": "Previous guides",
+      "next": "Next guides"
+    }
+  },
+  "blog": {
+    "listTitle": "Our Essential Guides",
+    "listDescription": "Fertility, explained simply and backed by science — for her, for him, and for both of you.",
+    "guidesCount": "{count, plural, =0 {guides} =1 {guide} other {guides}}",
+    "backToGuides": "← All guides",
+    "readingTimeSuffix": "read",
+    "relatedReading": "Also worth reading"
+  },
+  "guides": {
+    "title": "Our Guides",
+    "description": "Practical, natural advice to support your fertility, alone or as a couple — written by the BioFertMaroc team.",
+    "sections": {
+      "elle": { "label": "For Her", "description": "Cycle, ovulation and hormonal balance." },
+      "lui": { "label": "For Him", "description": "Male fertility and habits that matter." },
+      "deux": { "label": "For Both of You", "description": "Nutrition, preconception and the 3-month protocol." }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our products, shipping and your orders.",
+    "sections": {
+      "products": "Products & Usage",
+      "shipping": "Shipping & Payment",
+      "orders": "Orders & Returns"
+    }
+  },
+  "about": {
+    "title": "Our Story",
+    "intro": "100% natural supplements, made in Morocco to support every step of the fertility journey — alone or as a couple.",
+    "whyTitle": "Why BioFertMaroc?",
+    "paragraph1": "BioFertMaroc was born from a simple observation: fertility involves both partners, yet support for men is still too often overlooked. We wanted to create formulas designed specifically for her and for him, to take alone or together.",
+    "paragraph2": "Every product — BellaFert, FertiMen, Ferti Power, PowerMen, SmokeClean Men, Relaxes Woman, CycleCare — is formulated from natural active ingredients, manufactured in GMP-certified facilities, with no artificial additives.",
+    "paragraph3": "Our protocols are designed around 3 months, the time it takes for a full maturation cycle of eggs or sperm. No shortcuts — just consistency and formulas that work."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "A question about a product, an order, or a partnership? Our team replies within 24 to 48h.",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "addressLine1": "123 Wellness Ave",
+    "addressLine2": "Casablanca, Morocco",
+    "shippingLabel": "Shipping & Payment",
+    "shippingBody": "Delivery anywhere in Morocco within 24 to 48h. Cash on delivery or by card."
+  },
+  "forms": {
+    "contact": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send message",
+      "successTitle": "Thanks, your message has been sent!",
+      "successBody": "Our team will reply within 24 to 48h."
+    },
+    "newsletter": {
+      "emailLabel": "Email address",
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "success": "Thanks for signing up! Keep an eye on your inbox."
+    },
+    "checkout": {
+      "firstNameLabel": "First name",
+      "firstNamePlaceholder": "Your first name",
+      "lastNameLabel": "Last name",
+      "lastNamePlaceholder": "Your last name",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "06 00 00 00 00",
+      "emailLabel": "Email (optional)",
+      "emailPlaceholder": "you@example.com",
+      "addressLabel": "Address",
+      "addressPlaceholder": "Street, number, neighborhood…",
+      "cityLabel": "City",
+      "cityPlaceholder": "Casablanca",
+      "provinceLabel": "Region",
+      "provincePlaceholder": "Select a region",
+      "zipLabel": "Postal code (optional)",
+      "zipPlaceholder": "20000",
+      "notesPlaceholder": "Delivery instructions, preferred time…"
+    }
+  },
+  "quiz": {
+    "title": "Personalized Assessment",
+    "intro": "Answer a few questions to get a recommendation tailored to your situation. Your answers stay confidential.",
+    "userInfo": {
+      "title": "Let's get started",
+      "subtitle": "Tell us a bit about yourself before we personalize your assessment.",
+      "fullNameLabel": "Full name",
+      "fullNamePlaceholder": "Your full name",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "continue": "Continue"
+    },
+    "questionOf": "Question {current} of {total}",
+    "back": "Back",
+    "needHelp": "Need help?",
+    "resultReady": "Your assessment is ready",
+    "weRecommend": "We recommend {product}",
+    "discover": "Discover {product}",
+    "viewAllProducts": "View all our products",
+    "restart": "Restart the questionnaire"
+  },
+  "legal": {
+    "lastUpdated": "Last updated: January 2026",
+    "terms": {
+      "title": "Terms of Sale"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    }
+  },
+  "notFound": {
+    "title": "This page can't be found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "backHome": "Back to home"
+  },
+  "errorBoundary": {
+    "product": {
+      "title": "This product couldn't be loaded",
+      "body": "Something went wrong fetching data from our store. Please try again in a moment."
+    },
+    "collection": {
+      "title": "This collection couldn't be loaded",
+      "body": "Something went wrong fetching products from our store. Please try again in a moment."
+    },
+    "retry": "Try again"
+  },
+  "orderSuccess": {
+    "title": "Thank you for your order!",
+    "orderNumber": "Order {number}",
+    "body": "We'll call you shortly to confirm your order before it ships.",
+    "continueShopping": "Continue shopping",
+    "notFoundTitle": "Order not found",
+    "notFoundBody": "We couldn't find this order. If you just placed it, please contact us."
+  },
+  "seo": {
+    "home": {
+      "title": "Natural supplements for your fertility",
+      "description": "100% natural dietary supplements to support female, male and couple fertility, formulated in Morocco."
+    },
+    "about": {
+      "title": "About",
+      "description": "The BioFertMaroc story: natural supplements designed to support fertility, for her, for him, and for both of you."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Advice on female fertility, male fertility, and the couple's journey, by the BioFertMaroc team."
+    },
+    "checkout": {
+      "title": "Complete your order",
+      "description": "Complete your BioFertMaroc order in a few simple steps. Cash on delivery."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact the BioFertMaroc team with any question about our products or your order."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Answers to the most frequently asked questions about BioFertMaroc products, shipping and orders."
+    },
+    "guides": {
+      "title": "Guides",
+      "description": "Our guides on female fertility, male fertility and the couple's journey, written by the BioFertMaroc team."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "BioFertMaroc's privacy policy."
+    },
+    "quiz": {
+      "title": "Personalized Assessment",
+      "description": "Answer a few questions to get a recommendation tailored to your fertility journey."
+    },
+    "terms": {
+      "title": "Terms of Sale",
+      "description": "BioFertMaroc's terms of sale."
+    }
+  }
+}

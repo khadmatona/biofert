@@ -1,0 +1,31 @@
+{
+  "name": "biofertmaroc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "migrate:shopify:dry-run": "tsx --env-file=.env.local scripts/shopify-migration/migrate.ts --dry-run",
+    "migrate:shopify": "tsx --env-file=.env.local scripts/shopify-migration/migrate.ts",
+    "verify:shopify": "tsx --env-file=.env.local scripts/shopify-migration/verify.ts"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "next-intl": "^4.13.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  }
+}
