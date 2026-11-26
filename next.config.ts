@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.shopify.com",
       },
+      {
+        // CycleCare landing visuals (lib/landing/cyclecare.ts) until they
+        // are self-hosted in public/lp/cyclecare/.
+        protocol: "https",
+        hostname: "biodfert.vercel.app",
+        pathname: "/images/**",
+      },
     ],
   },
 };
