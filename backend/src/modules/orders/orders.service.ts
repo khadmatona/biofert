@@ -4,6 +4,7 @@ import {
   Injectable,
   Logger,
   NotFoundException,
+  Optional,
   ServiceUnavailableException,
 } from "@nestjs/common";
 import { Prisma, Order as PrismaOrder } from "@prisma/client";
@@ -11,6 +12,9 @@ import { PrismaService } from "../../database/prisma.service";
 import { ShopifyService } from "../shopify/shopify.service";
 import type { AdminProductVariant } from "../shopify/shopify.types";
 import { CreateOrderDto } from "./dto/create-order.dto";
+import { CreateLandingOrderDto } from "./dto/create-landing-order.dto";
+import { LANDING_OFFERS } from "./landing-offers";
+import { MetaCapiService } from "./meta-capi.service";
 import { UpdateOrderStatusDto } from "./dto/update-order-status.dto";
 import { ALLOWED_STATUS_TRANSITIONS, OrderStatus } from "./enums/order-status.enum";
 import { isValidPhone, normalizeMoroccanPhone } from "./phone.util";
@@ -33,7 +37,8 @@ export class OrdersService {
 
   constructor(
     private readonly prisma: PrismaService,
-    private readonly shopify: ShopifyService
+    private readonly shopify: ShopifyService,
+    @Optional() private readonly capi?: MetaCapiService
   ) {}
 
   async create(dto: CreateOrderDto): Promise<CreateOrderResult> {
@@ -74,12 +79,130 @@ export class OrdersService {
       };
     });
 
+    return this.placeOrder({
+      idempotencyKey: dto.idempotencyKey,
+      resolvedItems,
+      customer: { ...dto.customer, phone: normalizedPhone },
+      shippingAddress: dto.shippingAddress,
+      notes: dto.notes,
+      tags: ORDER_TAGS,
+    });
+  }
+
+  /**
+   * Landing-page order: the client picks an offer id, everything priced
+   * comes from LANDING_OFFERS + live Shopify data. Same persistence,
+   * idempotency and pending_confirmation flow as the cart checkout.
+   */
+  async createLanding(
+    dto: CreateLandingOrderDto,
+    meta: { clientIp?: string; userAgent?: string } = {}
+  ): Promise<CreateOrderResult> {
+    const existing = await this.prisma.order.findUnique({
+      where: { idempotencyKey: dto.idempotencyKey },
+    });
+    if (existing) return this.toCreateResult(existing);
+
+    const offer = LANDING_OFFERS[dto.offerId];
+    if (!offer) throw new BadRequestException("Unknown offer.");
+
+    const normalizedPhone = normalizeMoroccanPhone(dto.phone);
+    if (!isValidPhone(normalizedPhone)) {
+      throw new BadRequestException("المرجو إدخال رقم هاتف صحيح.");
+    }
+
+    const variant = await this.shopify.getFirstVariantByHandle(offer.productHandle);
+    if (!variant) {
+      throw new ServiceUnavailableException("This offer is temporarily unavailable.");
+    }
+    this.assertPurchasable(variant, offer.quantity);
+
+    const total = new Prisma.Decimal(offer.total);
+    const unitPrice = total.div(offer.quantity).toDecimalPlaces(2);
+
+    const [firstName, ...rest] = dto.fullName.trim().split(/\s+/);
+    const lastName = rest.join(" ");
+    const city = dto.city.trim();
+
+    const result = await this.placeOrder({
+      idempotencyKey: dto.idempotencyKey,
+      resolvedItems: [
+        {
+          item: { variantId: variant.id, quantity: offer.quantity },
+          variant,
+          unitPrice,
+          totalPrice: total,
+          priceOverride: unitPrice.toFixed(2),
+        },
+      ],
+      customer: { firstName, lastName, phone: normalizedPhone },
+      // COD flow: the agent confirms the full address on the call.
+      shippingAddress: { address1: city, city, country: "MA" },
+      notes: [
+        offer.label,
+        "العنوان الكامل يؤكد مع الزبونة في المكالمة",
+        dto.pageUrl ? `Source: ${dto.pageUrl}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+      tags: [...ORDER_TAGS, offer.source],
+      sourceName: offer.source,
+      totalOverride: total,
+    });
+
+    if (dto.eventId && this.capi) {
+      void this.capi.sendPurchase({
+        eventId: dto.eventId,
+        pageUrl: dto.pageUrl,
+        value: offer.total,
+        currency: "MAD",
+        contentIds: [variant.product.id.split("/").pop() ?? variant.product.id],
+        numItems: offer.quantity,
+        phone: normalizedPhone,
+        firstName,
+        lastName,
+        city,
+        clientIp: meta.clientIp,
+        userAgent: meta.userAgent,
+        fbp: dto.fbp,
+        fbc: dto.fbc,
+      });
+    }
+
+    return result;
+  }
+
+  private async placeOrder(params: {
+    idempotencyKey: string;
+    resolvedItems: {
+      item: { variantId: string; quantity: number };
+      variant: AdminProductVariant;
+      unitPrice: Prisma.Decimal;
+      totalPrice: Prisma.Decimal;
+      priceOverride?: string;
+    }[];
+    customer: { firstName: string; lastName: string; phone: string; email?: string };
+    shippingAddress: CreateOrderDto["shippingAddress"];
+    notes?: string;
+    tags: string[];
+    sourceName?: string;
+    totalOverride?: Prisma.Decimal;
+  }): Promise<CreateOrderResult> {
+    const { resolvedItems } = params;
+    const dto = {
+      idempotencyKey: params.idempotencyKey,
+      customer: params.customer,
+      shippingAddress: params.shippingAddress,
+      notes: params.notes,
+    };
+    const normalizedPhone = params.customer.phone;
+
     const subtotal = resolvedItems.reduce(
       (sum, r) => sum.add(r.totalPrice),
       new Prisma.Decimal(0)
     );
     const shippingAmount = new Prisma.Decimal(0);
-    const total = subtotal.add(shippingAmount);
+    const total = params.totalOverride ?? subtotal.add(shippingAmount);
     const currency = "MAD";
 
     // --- Persist locally first, as pending_confirmation. --------------------
@@ -133,6 +256,7 @@ export class OrdersService {
         lineItems: resolvedItems.map((r) => ({
           variantId: r.variant.id,
           quantity: r.item.quantity,
+          unitPrice: r.priceOverride,
         })),
         customer: {
           email: dto.customer.email,
@@ -142,7 +266,8 @@ export class OrdersService {
         },
         shippingAddress: dto.shippingAddress,
         note: dto.notes,
-        tags: ORDER_TAGS,
+        tags: params.tags,
+        sourceName: params.sourceName,
       });
 
       order = await this.prisma.order.update({
