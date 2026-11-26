@@ -164,6 +164,43 @@ export class ShopifyService {
   }
 
   /**
+   * Resolves a product handle to its first variant (full order-validation
+   * shape). Used by landing-page offers, which reference products by
+   * handle so they survive variant re-creation in Shopify.
+   */
+  async getFirstVariantByHandle(handle: string): Promise<AdminProductVariant | null> {
+    const query = /* GraphQL */ `
+      query GetFirstVariantByHandle($handle: String!) {
+        productByIdentifier(identifier: { handle: $handle }) {
+          variants(first: 1) {
+            nodes {
+              id
+              title
+              sku
+              availableForSale
+              inventoryPolicy
+              inventoryQuantity
+              price
+              image {
+                url
+              }
+              product {
+                id
+                title
+                status
+              }
+            }
+          }
+        }
+      }
+    `;
+    const data = await this.adminFetch<{
+      productByIdentifier: { variants: { nodes: AdminProductVariant[] } } | null;
+    }>(query, { handle });
+    return data.productByIdentifier?.variants.nodes[0] ?? null;
+  }
+
+  /**
    * Creates the order directly via orderCreate — never through checkout,
    * never marked as paid. financialStatus PENDING reflects an unpaid
    * Cash-on-Delivery order awaiting phone confirmation.
@@ -188,6 +225,9 @@ export class ShopifyService {
       lineItems: input.lineItems.map((line) => ({
         variantId: line.variantId,
         quantity: line.quantity,
+        ...(line.unitPrice
+          ? { priceSet: { shopMoney: { amount: line.unitPrice, currencyCode: "MAD" } } }
+          : {}),
       })),
       // Top-level contact info on the order itself — set unconditionally so
       // the order always carries it, independent of whether a Customer
@@ -211,6 +251,7 @@ export class ShopifyService {
       financialStatus: "PENDING",
       note: input.note,
       tags: input.tags,
+      ...(input.sourceName ? { sourceName: input.sourceName } : {}),
     };
 
     // customer.toUpsert requires an email (or an existing customer id) to
