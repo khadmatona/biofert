@@ -37,6 +37,21 @@ class EnvironmentVariables {
   @IsOptional()
   @IsNumberString()
   PORT?: string;
+
+  // Optional — Meta Conversions API for landing-page Purchase events.
+  // Unset = no server-side events are sent.
+  @IsOptional()
+  @IsNumberString()
+  META_PIXEL_ID?: string;
+
+  @IsOptional()
+  @IsString()
+  META_CAPI_ACCESS_TOKEN?: string;
+
+  // Only for testing in Events Manager → Test events. Leave EMPTY in prod.
+  @IsOptional()
+  @IsString()
+  META_TEST_EVENT_CODE?: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {
