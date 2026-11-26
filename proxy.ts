@@ -8,7 +8,8 @@ export function proxy(request: Parameters<typeof handleI18nRouting>[0]) {
 }
 
 export const config = {
-  // Skip API routes (incl. the Shopify webhook), Next internals, and any
-  // request for a file with an extension (static assets, images, etc.).
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  // Skip API routes (incl. the Shopify webhook), ad landing pages (/lp/*,
+  // Arabic-only with their own root layout — no locale prefix), Next
+  // internals, and any request for a file with an extension.
+  matcher: ["/((?!api|lp(?:/|$)|_next|_vercel|.*\\..*).*)"],
 };
