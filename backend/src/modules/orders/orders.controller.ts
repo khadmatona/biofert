@@ -6,11 +6,14 @@ import {
   ParseUUIDPipe,
   Patch,
   Post,
+  Req,
   UseGuards,
 } from "@nestjs/common";
 import { Throttle } from "@nestjs/throttler";
 import { AdminApiKeyGuard } from "../../common/guards/admin-api-key.guard";
+import type { Request } from "express";
 import { CreateOrderDto } from "./dto/create-order.dto";
+import { CreateLandingOrderDto } from "./dto/create-landing-order.dto";
 import { UpdateOrderStatusDto } from "./dto/update-order-status.dto";
 import { OrdersService } from "./orders.service";
 
@@ -24,6 +27,20 @@ export class OrdersController {
   @Post()
   async create(@Body() dto: CreateOrderDto) {
     const order = await this.ordersService.create(dto);
+    return { success: true, order };
+  }
+
+  // Ad landing pages (storefront /lp/*): offer id + name/phone/city only.
+  @Throttle({ default: { limit: 5, ttl: 60_000 } })
+  @Post("landing")
+  async createLanding(@Body() dto: CreateLandingOrderDto, @Req() req: Request) {
+    const forwarded = req.headers["x-forwarded-for"];
+    const clientIp =
+      (Array.isArray(forwarded) ? forwarded[0] : forwarded)?.split(",")[0]?.trim() || req.ip;
+    const order = await this.ordersService.createLanding(dto, {
+      clientIp,
+      userAgent: req.headers["user-agent"],
+    });
     return { success: true, order };
   }
 
