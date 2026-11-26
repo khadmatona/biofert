@@ -34,7 +34,12 @@ export interface ShippingAddressInput {
 }
 
 export interface CreateShopifyOrderInput {
-  lineItems: { variantId: string; quantity: number }[];
+  /**
+   * `unitPrice` is only ever set by the server itself (landing-page bundle
+   * offers in ../orders/landing-offers.ts) — never from client input.
+   * When present it overrides the variant's catalog price on this line.
+   */
+  lineItems: { variantId: string; quantity: number; unitPrice?: string }[];
   customer: {
     email?: string;
     phone: string;
@@ -44,6 +49,8 @@ export interface CreateShopifyOrderInput {
   shippingAddress: ShippingAddressInput;
   note?: string;
   tags: string[];
+  /** Order "source" shown in Shopify admin (e.g. "lp-cyclecare"). */
+  sourceName?: string;
 }
 
 export interface CreateShopifyOrderResult {
