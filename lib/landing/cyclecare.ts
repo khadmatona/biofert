@@ -36,7 +36,7 @@ export const cyclecareOffers: CyclecareOffer[] = [
     badge: "العرض التجريبي",
     quantity: 1,
     title: "قَرعة واحدة (30 حبة)",
-    price: 219,
+    price: 199,
     compareAt: 299,
   },
   {
@@ -59,7 +59,7 @@ export const cyclecareOffers: CyclecareOffer[] = [
   },
 ];
 
-export const cyclecareHeaderPrice = { price: 219, compareAt: 349, discountLabel: "-40%" };
+export const cyclecareHeaderPrice = { price: 199, compareAt: 349, discountLabel: "-43%" };
 
 export function formatMad(amount: number): string {
   return `MAD${amount.toFixed(2)}`;
