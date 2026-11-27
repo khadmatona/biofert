@@ -27,8 +27,8 @@ export const LANDING_OFFERS: Record<string, LandingOffer> = {
   "cyclecare-1": {
     productHandle: "cyclecare",
     quantity: 1,
-    total: "219.00",
-    label: "CycleCare — العرض التجريبي: قرعة واحدة (219 درهم)",
+    total: "199.00",
+    label: "CycleCare — العرض التجريبي: قرعة واحدة (199 درهم)",
     source: "lp-cyclecare",
   },
   "cyclecare-3": {
