@@ -11,6 +11,8 @@ export interface AdminProductVariant {
   availableForSale: boolean;
   inventoryPolicy: "DENY" | "CONTINUE";
   inventoryQuantity: number | null;
+  /** false = Shopify does not count stock for this variant (quantity is meaningless). */
+  inventoryItem?: { tracked: boolean } | null;
   price: string;
   image: { url: string } | null;
   product: {
