@@ -138,6 +138,9 @@ export class ShopifyService {
             availableForSale
             inventoryPolicy
             inventoryQuantity
+            inventoryItem {
+              tracked
+            }
             price
             image {
               url
@@ -180,6 +183,9 @@ export class ShopifyService {
               availableForSale
               inventoryPolicy
               inventoryQuantity
+              inventoryItem {
+                tracked
+              }
               price
               image {
                 url
