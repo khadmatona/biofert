@@ -303,8 +303,10 @@ export class OrdersService {
     // Catches "ordering more units than are in stock" — availableForSale
     // alone is binary and doesn't consider the requested quantity. Only
     // enforced when Shopify reports a sane (non-negative) tracked quantity;
-    // untracked variants report values like -1 and stay availableForSale.
+    // untracked variants report values like -1 (or 0) and stay
+    // availableForSale, so they are skipped explicitly.
     if (
+      variant.inventoryItem?.tracked !== false &&
       variant.inventoryPolicy === "DENY" &&
       variant.inventoryQuantity !== null &&
       variant.inventoryQuantity >= 0 &&
